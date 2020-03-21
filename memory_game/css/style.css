@@ -38,7 +38,7 @@ h1 {
 	text-transform: uppercase;
 }
 
-a {
+.alink {
 	font-family: Raleway;
 	color: #FFFFFF;
 	letter-spacing: 1px;
@@ -50,7 +50,7 @@ a {
 	border-bottom: 2px solid transparent;
 }
 
-a:hover {
+.alink:hover {
 	border-bottom: 2px solid white;
 }
 
@@ -96,4 +96,9 @@ footer {
 .name {
 	color: #F15B31;
 	font-weight: 700;
+	text-decoration: none;
+}
+
+.name:hover {
+	color: white;
 }
