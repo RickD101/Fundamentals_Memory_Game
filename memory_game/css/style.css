@@ -71,12 +71,14 @@ p{
 
 img {
 	margin: 15px 8px 0 8px;
+	width: 111px;
+	height: 176px;
 }
 
 button, #score, #notification {
 	display: inline-block;
 	border: 2px solid grey;
-	border-radius: 6px;
+	border-radius: 4px;
 	margin: 15px 2px 0;
 	padding: 5px;
 	width: 235px;
@@ -92,11 +94,6 @@ button:hover {
 button:active {
 	background: black;
 }
-
-#score {
-	text-align: left;
-}
-
 
 footer {
 	position: fixed;
