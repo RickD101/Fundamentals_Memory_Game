@@ -1,6 +1,7 @@
 body {
 	text-align: center;
 	margin: 0;
+	background: #f0eda1;
 }
 
 .clearfix:after {
@@ -22,11 +23,6 @@ nav {
 	background-color: #00A6B3;
 	color: #FFFFFF;
 	padding: 20px 0;
-}
-
-main {
-	width: 95%;
-	margin: 35px auto 50px;
 }
 
 h1 {
@@ -99,6 +95,15 @@ button {
 
 #reset:active {
 	background: black;
+}
+
+#game-board {
+	background: url("../images/felt.jpg");
+	padding: 5px 12px 20px;
+	margin: 15px auto;
+	border: 2px solid grey;
+	border-radius: 10px;
+	max-width: 1270px;
 }
 
 footer {

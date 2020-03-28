@@ -338,16 +338,20 @@ function createBoard() {
 		cardMatch = [];
 		a = cardSelect[Math.floor(Math.random()*cardSelect.length)];
 		cardSelect.splice(cardSelect.indexOf(a), 1);
+		
 		for (let i=0; i<cardSelect.length; i++) {
 			if (cards[cardSelect[i]].rank === cards[a].rank) {
 				cardMatch.push(cardSelect[i]);
 			}
 		}		
+		
 		b = cardMatch[Math.floor(Math.random()*cardMatch.length)];
 		cardSelect.splice(cardSelect.indexOf(b), 1);
 		cardSelection.push(a, b);
 	}
+
 	shuffleArray(cardSelection);
+	
 	for (let i=0; i<cardSelection.length; i++) {
 		let cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back2.png');
@@ -361,9 +365,11 @@ function resetFlip() {
 	let card1 = document.getElementById(cardsFlipped[cardsFlipped.length -1]);
 	card1.setAttribute('src', 'images/back2.png');
 	card1.addEventListener('click', flipCard);
+	
 	let card2 = document.getElementById(cardsFlipped[cardsFlipped.length -2]);
 	card2.setAttribute('src', 'images/back2.png');
 	card2.addEventListener('click', flipCard);
+	
 	cardsFlipped.pop();
 	cardsFlipped.pop();
 }
@@ -373,6 +379,7 @@ function resetBoard() {
 
 	if (val%2 == 0 && val>=4 && val<=52) {
 		board = document.getElementById('game-board');
+		
 		for (let i=0; i<cardNumber; i++) {
 			board.removeChild(board.childNodes[0]);
 		}
@@ -391,7 +398,7 @@ function resetBoard() {
 		createBoard();
 	}
 	else {
-		alert("Please enter an even number between 4 and 52");
+		alert("Please enter an even number between 4 and 52!");
 	}
 }
 
