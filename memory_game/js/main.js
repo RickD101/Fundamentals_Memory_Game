@@ -269,7 +269,7 @@ let cardsNotFlipped = [];
 let score = 0;
 let bonus = 1;
 let delay = 1250;
-let cardNumber = 18;
+let cardNumber = 30;
 let cardSelection = [];
 let board;
 let cardMatch =[];
