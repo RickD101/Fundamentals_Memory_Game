@@ -1,5 +1,4 @@
 body {
-	background: url('images/felt.jpg');
 	text-align: center;
 	margin: 0;
 }
@@ -68,6 +67,8 @@ p{
 	font-family: "Droid Serif";
 	line-height: 26px;
 	font-size: 18px;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 img {
@@ -76,15 +77,19 @@ img {
 	height: 176px;
 }
 
-button {
+button, #cardNumber {
 	display: inline-block;
 	border: 2px solid grey;
 	border-radius: 4px;
 	margin: 15px 2px 0;
 	padding: 5px 0;
-	width: 250px;
 	font-size: 20px;
 	font-family: "Raleway";
+	text-align: center;
+}
+
+button {
+	width: 250px;
 }
 
 #reset:hover {

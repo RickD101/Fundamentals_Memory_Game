@@ -1,5 +1,3 @@
-console.log("Up and running!");
-
 const cards = [
 {
 rank: "queen",
@@ -266,28 +264,31 @@ cardImage: "images/png/2_of_clubs.png"
 let cardsInPlay = [];
 let cardsFlipped = [];
 let cardsNotFlipped = [];
-let score = 0;
-let bonus = 1;
-let delay = 1250;
-let cardNumber = 30;
 let cardSelection = [];
 let board;
 let cardMatch =[];
-
 let cardSelect =[];
 for (i=0; i<cards.length; i++) {
 	cardSelect[i] = i;
 }
 
+let score = 0;
+let bonus = 1;
+let delay = 1250;
+let cardNumber = 26;
+
 function checkForMatch() {	
 	if (cardsInPlay.length === 2) {
+	    
 	    blockInput();
+	   
 	    if (cardsInPlay[0] === cardsInPlay[1]) {
 		    document.getElementById('notification').textContent = 'Found a match!';
 		    setTimeout(resetBar, delay);
 		    score += 1*bonus;
 		    bonus = bonus*2;
 	    }
+	    
 	    else {
 		    document.getElementById('notification').textContent = 'Try again!';
 		    setTimeout(resetFlip, delay);
@@ -295,10 +296,12 @@ function checkForMatch() {
 		    score -= 1;
 		    bonus = 1;
 	    }
+	    
 	    document.getElementById('score').textContent = 'Score: ' + score;
 	    cardsInPlay = [];
 	    setTimeout(restoreInput, delay);
     }
+    
     if (cardsFlipped.length === cardNumber) {
     	setTimeout(gameOver, delay);
     }
@@ -320,7 +323,7 @@ function blockInput() {
 }
 
 function restoreInput() {
-	cardsNotFlipped = document.querySelectorAll("img[src='images/back2.png'");
+	cardsNotFlipped = document.querySelectorAll("img[src='images/back2.png']");
 	for (let i=0; i<cardsNotFlipped.length; i++) {
 		cardsNotFlipped[i].addEventListener('click', flipCard);
 	}
@@ -332,26 +335,19 @@ function createBoard() {
 	let b = [];
 
 	for (let i=0; i<cardNumber/2; i++) {
-		
 		cardMatch = [];
-
 		a = cardSelect[Math.floor(Math.random()*cardSelect.length)];
 		cardSelect.splice(cardSelect.indexOf(a), 1);
-
 		for (let i=0; i<cardSelect.length; i++) {
 			if (cards[cardSelect[i]].rank === cards[a].rank) {
 				cardMatch.push(cardSelect[i]);
 			}
-		}
-		
+		}		
 		b = cardMatch[Math.floor(Math.random()*cardMatch.length)];
 		cardSelect.splice(cardSelect.indexOf(b), 1);
-
 		cardSelection.push(a, b);
 	}
-
 	shuffleArray(cardSelection);
-
 	for (let i=0; i<cardSelection.length; i++) {
 		let cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back2.png');
@@ -359,7 +355,6 @@ function createBoard() {
 		cardElement.addEventListener('click', flipCard);
 		document.getElementById('game-board').appendChild(cardElement);	
 	}
-
 }
 
 function resetFlip() {
@@ -374,23 +369,30 @@ function resetFlip() {
 }
 
 function resetBoard() {
-	
-	board = document.getElementById('game-board');
-	for (let i=0; i<cardNumber; i++) {
-		board.removeChild(board.childNodes[0]);
+	let val = document.getElementById("cardNumber").value;
+
+	if (val%2 == 0 && val>=4 && val<=52) {
+		board = document.getElementById('game-board');
+		for (let i=0; i<cardNumber; i++) {
+			board.removeChild(board.childNodes[0]);
+		}
+		score = 0;
+		bonus = 1;
+		document.getElementById('score').textContent = 'Score: ' + score;
+		cardsInPlay = [];
+		cardsFlipped = [];
+		cardsNotFlipped = [];
+		cardSelection = [];
+		for (i=0; i<cards.length; i++) {
+			cardSelect[i] = i;
+		}
+		cardNumber = document.getElementById("cardNumber").value;
+		resetBar();
+		createBoard();
 	}
-	score = 0;
-	bonus = 1;
-	document.getElementById('score').textContent = 'Score: ' + score;
-	cardsInPlay = [];
-	cardsFlipped = [];
-	cardsNotFlipped = [];
-	cardSelection = [];
-	for (i=0; i<cards.length; i++) {
-		cardSelect[i] = i;
+	else {
+		alert("Please enter an even number between 4 and 52");
 	}
-	resetBar();
-	createBoard();
 }
 
 function resetBar() {
