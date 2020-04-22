@@ -302,7 +302,7 @@ function checkForMatch() {
 	    setTimeout(restoreInput, delay);
     }
     
-    if (cardsFlipped.length === cardNumber) {
+    if (cardsFlipped.length == cardNumber) {
     	setTimeout(gameOver, delay);
     }
 }
