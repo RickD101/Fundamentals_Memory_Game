@@ -2,262 +2,262 @@ const cards = [
 {
 rank: "queen",
 suit: "hearts",
-cardImage: "images/png/queen_of_hearts2.png"
+cardImage: "images/svg/queen_of_hearts2.svg"
 },
 {
 rank: "queen",
 suit: "diamonds",
-cardImage: "images/png/queen_of_diamonds2.png"
+cardImage: "images/svg/queen_of_diamonds2.svg"
 },
 {
 rank: "king",
 suit: "hearts",
-cardImage: "images/png/king_of_hearts2.png"
+cardImage: "images/svg/king_of_hearts2.svg"
 },
 {
 rank: "king",
 suit: "diamonds",
-cardImage: "images/png/king_of_diamonds2.png"
+cardImage: "images/svg/king_of_diamonds2.svg"
 },
 {
 rank: "jack",
 suit: "hearts",
-cardImage: "images/png/jack_of_hearts2.png"
+cardImage: "images/svg/jack_of_hearts2.svg"
 },
 {
 rank: "jack",
 suit: "diamonds",
-cardImage: "images/png/jack_of_diamonds2.png"
+cardImage: "images/svg/jack_of_diamonds2.svg"
 },
 {
 rank: "ace",
 suit: "hearts",
-cardImage: "images/png/ace_of_hearts.png"
+cardImage: "images/svg/ace_of_hearts.svg"
 },
 {
 rank: "ace",
 suit: "diamonds",
-cardImage: "images/png/ace_of_diamonds.png"
+cardImage: "images/svg/ace_of_diamonds.svg"
 },
 {
 rank: "ten",
 suit: "hearts",
-cardImage: "images/png/10_of_hearts.png"
+cardImage: "images/svg/10_of_hearts.svg"
 },
 {
 rank: "ten",
 suit: "diamonds",
-cardImage: "images/png/10_of_diamonds.png"
+cardImage: "images/svg/10_of_diamonds.svg"
 },
 {
 rank: "nine",
 suit: "hearts",
-cardImage: "images/png/9_of_hearts.png"
+cardImage: "images/svg/9_of_hearts.svg"
 },
 {
 rank: "nine",
 suit: "diamonds",
-cardImage: "images/png/9_of_diamonds.png"
+cardImage: "images/svg/9_of_diamonds.svg"
 },
 {
 rank: "eight",
 suit: "hearts",
-cardImage: "images/png/8_of_hearts.png"
+cardImage: "images/svg/8_of_hearts.svg"
 },
 {
 rank: "eight",
 suit: "diamonds",
-cardImage: "images/png/8_of_diamonds.png"
+cardImage: "images/svg/8_of_diamonds.svg"
 },
 {
 rank: "seven",
 suit: "hearts",
-cardImage: "images/png/7_of_hearts.png"
+cardImage: "images/svg/7_of_hearts.svg"
 },
 {
 rank: "seven",
 suit: "diamonds",
-cardImage: "images/png/7_of_diamonds.png"
+cardImage: "images/svg/7_of_diamonds.svg"
 },
 {
 rank: "six",
 suit: "hearts",
-cardImage: "images/png/6_of_hearts.png"
+cardImage: "images/svg/6_of_hearts.svg"
 },
 {
 rank: "six",
 suit: "diamonds",
-cardImage: "images/png/6_of_diamonds.png"
+cardImage: "images/svg/6_of_diamonds.svg"
 },
 {
 rank: "five",
 suit: "hearts",
-cardImage: "images/png/5_of_hearts.png"
+cardImage: "images/svg/5_of_hearts.svg"
 },
 {
 rank: "five",
 suit: "diamonds",
-cardImage: "images/png/5_of_diamonds.png"
+cardImage: "images/svg/5_of_diamonds.svg"
 },
 {
 rank: "four",
 suit: "hearts",
-cardImage: "images/png/4_of_hearts.png"
+cardImage: "images/svg/4_of_hearts.svg"
 },
 {
 rank: "four",
 suit: "diamonds",
-cardImage: "images/png/4_of_diamonds.png"
+cardImage: "images/svg/4_of_diamonds.svg"
 },
 {
 rank: "three",
 suit: "hearts",
-cardImage: "images/png/3_of_hearts.png"
+cardImage: "images/svg/3_of_hearts.svg"
 },
 {
 rank: "three",
 suit: "diamonds",
-cardImage: "images/png/3_of_diamonds.png"
+cardImage: "images/svg/3_of_diamonds.svg"
 },
 {
 rank: "two",
 suit: "hearts",
-cardImage: "images/png/2_of_hearts.png"
+cardImage: "images/svg/2_of_hearts.svg"
 },
 {
 rank: "two",
 suit: "diamonds",
-cardImage: "images/png/2_of_diamonds.png"
+cardImage: "images/svg/2_of_diamonds.svg"
 },
 {
 rank: "queen",
 suit: "spades",
-cardImage: "images/png/queen_of_spades2.png"
+cardImage: "images/svg/queen_of_spades2.svg"
 },
 {
 rank: "queen",
 suit: "clubs",
-cardImage: "images/png/queen_of_clubs2.png"
+cardImage: "images/svg/queen_of_clubs2.svg"
 },
 {
 rank: "king",
 suit: "spades",
-cardImage: "images/png/king_of_spades2.png"
+cardImage: "images/svg/king_of_spades2.svg"
 },
 {
 rank: "king",
 suit: "clubs",
-cardImage: "images/png/king_of_clubs2.png"
+cardImage: "images/svg/king_of_clubs2.svg"
 },
 {
 rank: "jack",
 suit: "spades",
-cardImage: "images/png/jack_of_spades2.png"
+cardImage: "images/svg/jack_of_spades2.svg"
 },
 {
 rank: "jack",
 suit: "clubs",
-cardImage: "images/png/jack_of_clubs2.png"
+cardImage: "images/svg/jack_of_clubs2.svg"
 },
 {
 rank: "ace",
 suit: "spades",
-cardImage: "images/png/ace_of_spades.png"
+cardImage: "images/svg/ace_of_spades.svg"
 },
 {
 rank: "ace",
 suit: "clubs",
-cardImage: "images/png/ace_of_clubs.png"
+cardImage: "images/svg/ace_of_clubs.svg"
 },
 {
 rank: "ten",
 suit: "spades",
-cardImage: "images/png/10_of_spades.png"
+cardImage: "images/svg/10_of_spades.svg"
 },
 {
 rank: "ten",
 suit: "clubs",
-cardImage: "images/png/10_of_clubs.png"
+cardImage: "images/svg/10_of_clubs.svg"
 },
 {
 rank: "nine",
 suit: "spades",
-cardImage: "images/png/9_of_spades.png"
+cardImage: "images/svg/9_of_spades.svg"
 },
 {
 rank: "nine",
 suit: "clubs",
-cardImage: "images/png/9_of_clubs.png"
+cardImage: "images/svg/9_of_clubs.svg"
 },
 {
 rank: "eight",
 suit: "spades",
-cardImage: "images/png/8_of_spades.png"
+cardImage: "images/svg/8_of_spades.svg"
 },
 {
 rank: "eight",
 suit: "clubs",
-cardImage: "images/png/8_of_clubs.png"
+cardImage: "images/svg/8_of_clubs.svg"
 },
 {
 rank: "seven",
 suit: "spades",
-cardImage: "images/png/7_of_spades.png"
+cardImage: "images/svg/7_of_spades.svg"
 },
 {
 rank: "seven",
 suit: "clubs",
-cardImage: "images/png/7_of_clubs.png"
+cardImage: "images/svg/7_of_clubs.svg"
 },
 {
 rank: "six",
 suit: "spades",
-cardImage: "images/png/6_of_spades.png"
+cardImage: "images/svg/6_of_spades.svg"
 },
 {
 rank: "six",
 suit: "clubs",
-cardImage: "images/png/6_of_clubs.png"
+cardImage: "images/svg/6_of_clubs.svg"
 },
 {
 rank: "five",
 suit: "spades",
-cardImage: "images/png/5_of_spades.png"
+cardImage: "images/svg/5_of_spades.svg"
 },
 {
 rank: "five",
 suit: "clubs",
-cardImage: "images/png/5_of_clubs.png"
+cardImage: "images/svg/5_of_clubs.svg"
 },
 {
 rank: "four",
 suit: "spades",
-cardImage: "images/png/4_of_spades.png"
+cardImage: "images/svg/4_of_spades.svg"
 },
 {
 rank: "four",
 suit: "clubs",
-cardImage: "images/png/4_of_clubs.png"
+cardImage: "images/svg/4_of_clubs.svg"
 },
 {
 rank: "three",
 suit: "spades",
-cardImage: "images/png/3_of_spades.png"
+cardImage: "images/svg/3_of_spades.svg"
 },
 {
 rank: "three",
 suit: "clubs",
-cardImage: "images/png/3_of_clubs.png"
+cardImage: "images/svg/3_of_clubs.svg"
 },
 {
 rank: "two",
 suit: "spades",
-cardImage: "images/png/2_of_spades.png"
+cardImage: "images/svg/2_of_spades.svg"
 },
 {
 rank: "two",
 suit: "clubs",
-cardImage: "images/png/2_of_clubs.png"
+cardImage: "images/svg/2_of_clubs.svg"
 },
 ];
 
@@ -356,6 +356,7 @@ function createBoard() {
 		let cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back2.png');
 		cardElement.setAttribute('id', cardSelection[i]);
+		cardElement.setAttribute('class', 'card');
 		cardElement.addEventListener('click', flipCard);
 		document.getElementById('game-board').appendChild(cardElement);	
 	}

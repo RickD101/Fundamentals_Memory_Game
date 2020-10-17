@@ -74,7 +74,8 @@ p{
 img {
 	margin: 15px 8px 0 8px;
 	width: 111px;
-	height: 176px;
+	height: 161.5px;
+	vertical-align: top;
 }
 
 button, #cardNumber {
